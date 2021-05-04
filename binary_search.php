@@ -4,7 +4,6 @@ function binary_search(array $list, int $item) {
     $low = 0;
     $high = count($list) - 1;
 
-
     while ($low <= $high) {
         $mid = round(($low + $high) / 2);
         $guess = $list[$mid];
@@ -22,6 +21,5 @@ function binary_search(array $list, int $item) {
 
     return 'none';
 }
-
 
 echo binary_search([1,2,3,4,5], 5);
